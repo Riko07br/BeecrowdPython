@@ -3,6 +3,7 @@
 Repositório para as questões que consegui resolver do https://www.beecrowd.com.br/
 
 Questões específicas:
+
 Laboratório de programação:
 1019-1020-1035-1038-1048
 

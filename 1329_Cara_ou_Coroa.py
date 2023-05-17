@@ -1,4 +1,3 @@
-
 respostas = []
 
 while True:

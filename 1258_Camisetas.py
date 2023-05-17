@@ -10,14 +10,9 @@ while True:
 
     for i in range(casos):
         nome = input()
-        camisa = input()
-
-        cor, tamanho = camisa.split(" ")    
-        
+        cor, tamanho = input().split(" ")        
         pedidos.append([cor, tamanho, nome])
-
-        pass
-
+    
     # organiza primeiro a ultima coluna, por isso inicia no 2
     arrayIndex = 2
 
@@ -25,10 +20,11 @@ while True:
         global arrayIndex
         return array[arrayIndex]
 
-
+    #converte pra lista pra usar o sort()
     pedidos = list(pedidos)
+
     #ultima coluna nomes
-    pedidos.sort(key=getArrayKey)
+    pedidos.sort(key = getArrayKey)
     arrayIndex -= 1
 
     #penultima coluna P, M, G (ordem alfabetica reversa)
@@ -36,7 +32,7 @@ while True:
     arrayIndex -= 1
 
     #primeira coluna
-    pedidos.sort(key=getArrayKey)
+    pedidos.sort(key = getArrayKey)
 
     for i in pedidos:
         respostas.append(f"{i[0]} {i[1]} {i[2]}")
